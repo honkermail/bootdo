@@ -272,7 +272,7 @@
                   <artifactId>docker-maven-plugin</artifactId>
                   <version>0.4.11</version>
                   <configuration>
-                  	<dockerHost>unix:///var/run/docker.sock</dockerHost>
+                  	<dockerHost>host.docker.internal:2375</dockerHost>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <imageTags>
                        <imageTag>${project.version}</imageTag>
@@ -286,8 +286,6 @@
                            <include>${project.build.finalName}.jar</include>
                        </resource>
                     </resources>
-	 				<!-- 与maven配置文件settings.xml一致 -->
-					<serverId>docker-aliyun</serverId>
                   </configuration>
             </plugin>
         </plugins>
