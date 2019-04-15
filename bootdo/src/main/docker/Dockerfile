@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM frolvlad/alpine-oraclejre8:slim
 VOLUME /tmp
 ADD demo-service-ver-0.0.1.jar app.jar
 RUN sh -c 'touch /app.jar'
