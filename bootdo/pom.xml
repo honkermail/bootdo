@@ -286,8 +286,6 @@
                            <include>${project.build.finalName}.jar</include>
                        </resource>
                     </resources>
-	 				<!-- 与maven配置文件settings.xml一致 -->
-					<serverId>docker-aliyun</serverId>
                   </configuration>
             </plugin>
         </plugins>
