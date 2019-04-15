@@ -272,7 +272,11 @@
                   <artifactId>docker-maven-plugin</artifactId>
                   <version>0.4.11</version>
                   <configuration>
+<<<<<<< HEAD
                   	<dockerHost>unix:///var/run/docker.sock</dockerHost>
+=======
+                  	<dockerHost>https://server.gxg.red:2375</dockerHost>
+>>>>>>> branch 'master' of https://github.com/honkermail/bootdo.git
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <imageTags>
                        <imageTag>${project.version}</imageTag>
