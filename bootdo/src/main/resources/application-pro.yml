@@ -10,9 +10,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: root
+    url: jdbc:mysql://sframe.cldb9yko816o.ap-northeast-1.rds.amazonaws.com:33061/bootdo?useUnicode=true&characterEncoding=utf8
+    username: user_sframe
+    password: user_sframe
     initialSize: 1
     minIdle: 3
     maxActive: 20
