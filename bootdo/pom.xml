@@ -271,8 +271,8 @@
                   <groupId>com.spotify</groupId>
                   <artifactId>docker-maven-plugin</artifactId>
                   <version>0.4.11</version>
-                  <configuration>
-                  	<dockerHost>host.docker.internal:2375</dockerHost>
+                  <configuration>                  	
+                    <dockerHost>http://192.145.37.35:2375</dockerHost>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <imageTags>
                        <imageTag>${project.version}</imageTag>
