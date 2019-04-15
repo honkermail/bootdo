@@ -277,7 +277,7 @@
                        <imageTag>${project.version}</imageTag>
                        <imageTag>latest</imageTag>
                     </imageTags>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                        <resource>
                            <targetPath>/</targetPath>
@@ -285,6 +285,8 @@
                            <include>${project.build.finalName}.jar</include>
                        </resource>
                     </resources>
+	 				<!-- 与maven配置文件settings.xml一致 -->
+					<serverId>docker-registry</serverId>
                   </configuration>
             </plugin>
         </plugins>
