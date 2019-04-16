@@ -296,7 +296,7 @@
                         <!-- 单个镜像配置 -->
                         <image>
                             <!--镜像名(含版本号)-->
-                            <name>honker_mirror/honker_mirror:bootdo-2.0.0</name>
+                            <name>bootdo-2.0.0</name>
                             <!--别名:用于容器命名和在docker-compose.yml文件只能找到对应名字的配置-->
                             <alias>${project.name}</alias>
                             <!--镜像build相关配置-->
