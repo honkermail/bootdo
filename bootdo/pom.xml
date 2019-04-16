@@ -302,7 +302,7 @@
                             <!--镜像build相关配置-->
                             <build>
                                 <!--使用dockerFile文件-->
-                                <dockerFile>${project.basedir}/src/main/docker</dockerFile>
+                                <dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
                             </build>
                             <!--配置docker-compose文件-->
                             <!-- <external>
