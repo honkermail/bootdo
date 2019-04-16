@@ -1,7 +1,10 @@
 version: '2'
 services:
- 
-#¶¨ÒåÍøÂç
+ bootdo:
+    ports:
+     - "9000:9000"
+    image: "springio/bootdo"
+#å®šä¹‰ç½‘ç»œ
 networks:
    staticneta:
       ipam:
