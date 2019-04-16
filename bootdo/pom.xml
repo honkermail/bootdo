@@ -292,31 +292,31 @@
                     </authConfig>
                     
                     <!--镜像相关配置,支持多镜像-->
-                    <images>
-                        <!-- 单个镜像配置 -->
+                    <!-- <images>
+                        单个镜像配置
                         <image>
-                            <!--镜像名(含版本号)-->
+                            镜像名(含版本号)
                             <name>bootdo-2.0.0</name>
-                            <!--别名:用于容器命名和在docker-compose.yml文件只能找到对应名字的配置-->
+                            别名:用于容器命名和在docker-compose.yml文件只能找到对应名字的配置
                             <alias>${project.name}</alias>
-                            <!--镜像build相关配置-->
+                            镜像build相关配置
                             <build>
-                                <!--使用dockerFile文件-->
+                                使用dockerFile文件
                                 <dockerFile>${project.basedir}/src/main/docker</dockerFile>
                             </build>
-                            <!--配置docker-compose文件-->
-                            <!-- <external>
+                            配置docker-compose文件
+                            <external>
                                 <type>compose</type>
                                 <basedir>${project.basedir}/src/main/docker</basedir>
                                 <composeFile>docker-compose.yml</composeFile>
-                            </external> -->
-                            <!--容器run相关配置-->
+                            </external>
+                            容器run相关配置
                             <run>
-                                <!--配置运行时容器命名策略为:别名,如果不指定则默认为none,即使用随机分配名称-->
+                                配置运行时容器命名策略为:别名,如果不指定则默认为none,即使用随机分配名称
                                 <namingStrategy>alias</namingStrategy>
                             </run>
                         </image>
-                    </images>
+                    </images> -->
                 </configuration>
                 <dependencies>
                     <!--该插件需要这个依赖-->
